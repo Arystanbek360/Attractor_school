@@ -1,0 +1,109 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.upper {
+    text-transform: uppercase
+}
+
+.logo {
+    font-size: xx-large;
+}
+
+.bg-green {
+    background-color: #558321;
+}
+
+.text-gray {
+    color: #a8a8a8;
+}
+
+.bg-blue {
+    background-color: #009aae;
+}
+
+.bg-red {
+    background-color: #ff7f6c;
+}
+
+.text-red {
+    color: #ff7f6c;
+}
+
+.poz {
+    z-index: 8;
+}
+
+.opacity {
+    opacity: 70%;
+}
+
+.promo__title {
+    font-weight: 500;
+}
+
+.card-title {
+    color: white;
+    position: absolute;
+    font-weight: bolder;
+    z-index: 2;
+    text-shadow: black 1px 0 10px;
+}
+
+.text-blue {
+    color: #009aae;
+}
+
+.second__title {
+    color: #009aae;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.card__body {
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+.data {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 24px;
+}
+
+.month {
+    font-size: 16px;
+}
+
+.card__text__title {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.card__text__time {
+    font-size: 15px;
+}
+
+.chec {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+input[id="hide"]:checked~.hidden {
+    display: contents;
+}
+
+.footer {
+    background-color: #515151;
+}
+
+.icon {
+    height: 5px;
+    height: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/arrow-right-solid\ \(1\).svg);
+}

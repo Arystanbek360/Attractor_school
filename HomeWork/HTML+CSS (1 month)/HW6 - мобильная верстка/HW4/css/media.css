@@ -1,0 +1,167 @@
+@media screen and (max-width:1175px) {
+    .wrapper {
+        height: 3719px;
+    }
+
+    .container {
+        width: 706px;
+    }
+
+    .nav {
+        width: 330px;
+    }
+
+    .text {
+        height: 150px;
+        line-height: 56px;
+        letter-spacing: 4px;
+    }
+
+    .promo__title {
+        font-size: 36px;
+    }
+
+    .promo_text {
+        font-size: 24px;
+    }
+
+    .button {
+        margin: 7px 42% 101px;
+    }
+
+    .text_lines {
+        margin: 22px 0px 0px 578px;
+    }
+
+    .text_linef {
+        margin: 66px 0px 0px 9px;
+    }
+
+    .all_card {
+        align-content: space-between;
+        justify-content: center;
+        height: 1367px;
+        width: 710px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card_photo {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:765px) {
+    .wrapper {
+        height: 100%;
+        background-position-y: 2.3%;
+    }
+
+    .header {
+        height: 88px;
+    }
+
+    .container {
+        width: 300px;
+    }
+
+    .logo {
+        margin: 25px 33% 5px;
+    }
+
+    .nav {
+        width: 300px;
+        margin-top: 0px;
+    }
+
+    .text {
+        line-height: 35px;
+        letter-spacing: 0;
+        margin-top: 70px;
+    }
+
+    .promo__title {
+        font-size: 25px;
+    }
+
+    .promo_text {
+        font-size: 16px;
+    }
+
+    .button {
+        width: 110px;
+        font-size: 14px;
+        padding: 12px 19px;
+        margin: 7px 32% 101px;
+    }
+
+    .all_card {
+        width: 300px;
+    }
+
+    .card {
+        height: 336px;
+        width: 300px;
+        padding: 25px 15px;
+    }
+
+    .text_line {
+        width: 25px;
+    }
+
+    .text_lines {
+        margin: 14px 0px 0px 272px;
+    }
+
+    .text_linef {
+        margin: 44px 0px 0px 2px;
+    }
+
+    .icons {
+        height: 100px;
+        width: 100px;
+    }
+
+    .card_block {
+        width: 270px;
+        height: 160px;
+    }
+
+    .second_text {
+        line-height: 30px;
+        margin-top: 60px;
+    }
+
+    .text_linef {}
+
+    .text_title {
+        font-size: 24px;
+    }
+
+    .span {
+        font-size: 14px;
+    }
+
+    .photo {
+        width: 300px;
+        height: 442px;
+    }
+
+    .icon {
+        height: 140px;
+        background-size: cover;
+        width: 140px;
+    }
+
+    .photo_text {
+        height: 144px;
+        font-size: 12px;
+        line-height: 27px;
+    }
+
+    .footer {
+        height: 108px;
+        font-size: 16px;
+        padding-top: 38px;
+    }
+}

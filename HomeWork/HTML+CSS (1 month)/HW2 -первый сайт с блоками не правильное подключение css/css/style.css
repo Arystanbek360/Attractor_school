@@ -1,0 +1,180 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+}
+
+.header {
+    background: #02918c;
+    padding: 15px 0;
+    height: 105px;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.nav_link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1012px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 0px 43% 15px;
+}
+
+.nav_link {
+    margin-left: 73px;
+}
+
+.first {
+    height: 683px;
+    background-image: url(/img/main-pic.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+
+.text {
+    color: #fff;
+    width: 868px;
+    height: 275px;
+    margin: 183px 0px 0px 72px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    line-height: 33px;
+}
+
+.button {
+    height: 47px;
+    width: 196px;
+    background-color: #cfc91d;
+    margin: 0px 41%;
+    padding: 14px 58px;
+}
+
+.knock {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.second {
+    height: 620px;
+    width: 100%;
+}
+
+.about {
+    height: 264px;
+    margin-top: 90px;
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 46px;
+    font-weight: bold;
+    color: #02918c;
+}
+
+.about_text {
+    color: #7e8287;
+    font-size: 16px;
+}
+
+.all_card {
+    display: flex;
+}
+
+.first_card {
+    width: 253px;
+    height: 280px;
+    background-image: url(/img/ic-lamp.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 13px;
+}
+
+.second_card {
+    width: 253px;
+    height: 280px;
+    background-image: url(/img/ic-pencil.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 13px;
+}
+
+.third_card {
+    width: 253px;
+    height: 280px;
+    background-image: url(/img/ic-set.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 13px;
+}
+
+.fourth_card {
+    width: 253px;
+    height: 280px;
+    background-image: url(/img/ic-laptop.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 13px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #7e8287;
+    font-weight: bold;
+    margin-top: 55px;
+}
+
+.info {
+    font-size: 14px;
+    color: #7e8287;
+}
+
+.footer {
+    width: 100%;
+    height: 79px;
+    background-color: #000;
+    text-align: right;
+}
+
+h4 {
+    color: #7e8287;
+    font-size: 12px;
+    display: inline-block;
+    margin: 25px 5%;
+}

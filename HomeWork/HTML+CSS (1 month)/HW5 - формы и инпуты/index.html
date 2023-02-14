@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="/" class="form">
+
+            <input type="radio" name="field" id="mc1" class="sig" value="sig" checked>
+            <label for="mc1">Sign Up</label>
+
+            <input type="radio" name="field" id="mc2" class="log" value="log">
+            <label for="mc2">Log In</label>
+
+            <h1 class="form__title">Welcome onboard!</h1>
+
+            <div class="flexbox hidden">
+                <div class="form__group">
+                    <input type="text" class="form__input small" placeholder=" ">
+                    <label class="form__label">First Name</label>
+                </div>
+                <div class="form__group">
+                    <input type="text" class="form__input small" placeholder=" ">
+                    <label class="form__label">Last Name</label>
+                </div>
+            </div>
+
+            <div class="form__group big">
+                <input type="email" class="form__input" placeholder=" " id="email">
+                <label for="email" class="form__label">Email</label>
+            </div>
+            <div class="form__group big">
+                <input type="password" class="form__input" placeholder=" " id="password">
+                <label for="password" class="form__label">Password</label>
+            </div>
+
+            <div class="form__group hidden">
+                <textarea name="massage" id="massage" class="massage__input" cols="72"
+                    placeholder="Welcome message"></textarea>
+            </div>
+
+            <button class="form__btn" type="submit">Join</button>
+
+        </form>
+    </div>
+</body>
+
+</html>

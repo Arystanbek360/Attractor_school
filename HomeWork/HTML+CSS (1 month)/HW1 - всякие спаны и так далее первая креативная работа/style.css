@@ -1,0 +1,108 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ff8a00;
+}
+
+.main {
+    123background-color: #ff8a00;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.logo {
+    position: fixed;
+    margin: -415px 0px 0px 145px
+}
+
+header {
+    margin: 0px 250px;
+}
+
+.header-line {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 900px;
+    font-size: 36px;
+}
+
+.nav {
+    margin-left: 210px;
+}
+
+.nav1 {
+    color: #000;
+    text-decoration: none;
+    align-items: center font-weight:600px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.number {
+    color: #000;
+    text-decoration: none;
+    align-items: right;
+    margin-left: 700px;
+}
+
+.podbor {
+    margin: 90px 0px 20px 80px;
+}
+
+.info {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    margin: 20px 0px 20px 80px
+}
+
+.car {
+    position: absolute;
+    left: 580px;
+    top: 400px;
+}
+
+.button {
+    position: absolute;
+    left: 140px
+}
+
+.second {
+    background-color: #fff;
+    background-image: url(fon.jpg);
+    background-repeat: no-repeat;
+    width: 1560px;
+    margin: 0 auto;
+    height: 700px;
+    opacity: 0.8;
+    position: absolute;
+    left: 0px;
+    top: 900px;
+}
+
+.table {
+    border: 3px solid;
+}
+
+.table2 {
+    margin: 140px 0px 0px 1093px;
+    width: 248px;
+    height: 206px;
+    background-color: #fff;
+}
+
+.button2 {
+    background-color: #000;
+    color: #fff;
+    user-select: none;
+    text-decoration: none;
+    outline: none;
+    border-radius: 20px;
+    1margin-left: 1125px;
+    12margin-top: 1125px;
+    padding: 1em 2em;
+    font-size: 12px
+}

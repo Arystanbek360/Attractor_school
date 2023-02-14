@@ -1,0 +1,140 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c1bdba;
+    color: #fdfefe;
+}
+
+.second {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label {
+    display: inline-block;
+    padding: 15px;
+    width: 50%;
+    font-size: 20px;
+    height: 53px;
+    background-color: #7c9f9f;
+}
+
+input[type="radio"]:checked+label {
+    background: #cf2355;
+}
+
+input[id="mc1"]:checked~.hidden {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+}
+
+input[id="mc2"]:checked~.hidden {
+    display: none;
+}
+
+.form {
+    width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 1%;
+    background-color: #55847d;
+    letter-spacing: 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__group {
+    position: relative;
+    margin-bottom: 42px;
+    display: inline-grid;
+}
+
+.form__title {
+    margin: 42px 118px;
+    font-size: 32px;
+    font-weight: normal;
+    width: 284px;
+    height: 55px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    font-size: 22px;
+    margin: 8px;
+    color: #c1bdba;
+    transition: 0.3s;
+}
+
+.form__input {
+    height: 40px;
+    z-index: 3;
+    padding: 5px 10px;
+    border: 1px solid #fdfefe;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+    font-size: 22px;
+    color: #fdfefe;
+}
+
+.small {
+    width: 250px;
+}
+
+.big {
+    width: 100%;
+}
+
+.form__input:focus~.form__label,
+.form__input:not(:placeholder-shown)~.form__label {
+    color: #fdfefe;
+    top: -25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.massage__input {
+    height: 80px;
+    width: 100%;
+    z-index: 3;
+    padding: 5px 10px;
+    border: 1px solid #fdfefe;
+    background-color: transparent;
+    outline: none;
+    font-size: 22px;
+    color: #fdfefe;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #c1bdba;
+}
+
+
+.form__btn {
+    background-color: #cf2355;
+    color: #fdfefe;
+    height: 65px;
+    width: 100%;
+    border: none;
+    font-size: 32px;
+    font-weight: bold;
+}

@@ -1,0 +1,281 @@
+* {
+    margin: 0px;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    background-size: 100%;
+    height: 2104px;
+    background-color: #2a606c;
+    background-image: url(../img/main-pic.png);
+    background-repeat: no-repeat;
+}
+
+.header {
+    background-color: #204b52;
+    height: 80px;
+    opacity: 90%;
+}
+
+.container {
+    width: 1170px;
+    margin: 0px auto;
+}
+
+a.white {
+    color: white;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 25px 0px 0px 30px;
+}
+
+.nav {
+    width: 370px;
+    float: right;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_link {
+    font-size: 17px;
+}
+
+.text {
+    height: 150px;
+    margin-top: 135px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 60px;
+    letter-spacing: 6px;
+    color: white;
+}
+
+.zagolovok1 {
+    font-size: 41px;
+}
+
+.promo_text {
+    font-size: 31px;
+}
+
+.button {
+    width: 140px;
+    height: 45px;
+    border: 2px solid white;
+    display: inline-block;
+    margin: 0 43% 130px;
+    padding: 12px 34px;
+}
+
+.all_card {
+    height: 672px;
+    width: 1170px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.card {
+    height: 336px;
+    width: 585px;
+    text-align: center;
+    padding: 50px 90px;
+    display: grid;
+}
+
+.card_block {
+    width: 400px;
+    height: 120px;
+}
+
+.chat {
+    background-color: #e84c3d;
+}
+
+.pen {
+    background-color: #fdbd1f;
+}
+
+.crown {
+    background-color: #1bbc9b;
+}
+
+.user {
+    background-color: #9b58b5;
+}
+
+i {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0px auto 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.zagolovok2 {
+    font-size: 29px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.card_text {
+    font-size: 16px;
+}
+
+.ic_chat {
+    background-image: url(../img/ic-chat.png);
+}
+
+.ic_pen {
+    background-image: url(../img/ic-pencil.png);
+}
+
+.ic_crown {
+    background-image: url(../img/ic-crown.png);
+}
+
+.ic_user {
+    background-image: url(../img/ic-user.png);
+}
+
+.second_text {
+    height: 150px;
+    margin-top: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 45px;
+    color: white;
+}
+
+.text_line {
+    height: 1px;
+    width: 115px;
+    background-color: #417a85;
+    position: absolute;
+}
+
+.text_line1 {
+    margin: 67px 0px 0px 240px;
+}
+
+.text_line2 {
+    margin: 22px 0px 0px 810px;
+}
+
+.zagolovok3 {
+    font-size: 29px;
+}
+
+.span {
+    font-size: 21px;
+}
+
+.card_photo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.photo {
+    width: 370px;
+    height: 500px;
+    background-color: #204b52;
+    text-align: center;
+    padding: 40px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.line {
+    width: 370px;
+    height: 9px;
+}
+
+.icon {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.ph1 {
+    background-image: url(../img/photo-1.jpg);
+}
+
+.ph2 {
+    background-image: url(../img/photo-2.jpg);
+}
+
+.ph3 {
+    background-image: url(../img/photo-3.jpg);
+}
+
+.photo_text {
+    height: 144px;
+    font-size: 16px;
+    line-height: 35px;
+    color: #82b4bd;
+}
+
+.btn {
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 10px;
+}
+
+.footer {
+    height: 130px;
+    background-color: #204b52;
+    text-align: center;
+    font-size: 23px;
+    padding-top: 50px;
+}
+
+.footer_text {
+    color: white;
+}
+
+.footer_site {
+    color: #c6c082;
+}
+
+div.green {
+    border-top: 9px solid #19bd9b;
+}
+
+div.yellov {
+    border-top: 9px solid #fcbd20;
+}
+
+div.red {
+    border-top: 9px solid #e64d3f;
+}
+
+a.green {
+    background-color: #19bd9b;
+}
+
+a.yellov {
+    background-color: #fcbd20;
+}
+
+a.red {
+    background-color: #e64d3f;
+}
