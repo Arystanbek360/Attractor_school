@@ -1,0 +1,20 @@
+1.  true && (false or (2 < 3))
+    true && (false or (true))
+    true && true
+Answer:true
+
+2.  (2 < 3) && (3 > 4) || true
+    (true) && (false) or true
+    true && true
+Answer:true
+
+3.  !true && (!true || 100 != 5**2)
+    false && (false or (100!=25))
+    false && (false or (true))
+    false && true
+Answer: false
+
+4.  ("123" == 123) or ((10 <= 10) && (null == false))
+    (true) or ((true) && (true))
+    true or true
+Answer:true
