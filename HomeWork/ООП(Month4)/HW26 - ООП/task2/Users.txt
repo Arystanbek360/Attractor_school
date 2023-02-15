@@ -1,0 +1,4 @@
+Vasa,pumpkin,check,vasa
+Arystanbek@maul.com,Arystanbek,aris,1999aris
+kek@mail.com,Vasa,vas,misha
+cheburek@mail.ru,Cheburek,kek,143
