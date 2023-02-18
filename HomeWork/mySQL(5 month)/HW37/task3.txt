@@ -1,0 +1,10 @@
+select c.category,
+       YEAR(a.action_date)               as date,
+       min(a.price)                      as min,
+       max(a.price)                      as max,
+       sum(a.price * a.qty) / sum(a.qty) as avg_total
+from actions a
+         inner join products p on a.product_id = p.id
+         inner join categories c on p.category_id = c.id
+GROUP BY c.category, date
+order by date;

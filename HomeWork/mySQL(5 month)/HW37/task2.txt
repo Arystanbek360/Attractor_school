@@ -1,0 +1,10 @@
+select c.category,
+       s.supplier,
+       sum(a.price * a.qty) as total
+from actions a
+         inner join products p on a.product_id = p.id
+         inner join suppliers s on a.supplier_id = s.id
+         inner join categories c on p.category_id = c.id
+where YEAR(action_date) = 2016
+GROUP BY c.category, s.supplier
+order by s.supplier;

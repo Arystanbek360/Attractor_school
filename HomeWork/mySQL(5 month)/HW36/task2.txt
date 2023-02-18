@@ -1,0 +1,12 @@
+select actions.id,
+       actions.action_date as data,
+       products.product,
+       suppliers.supplier,
+       actions.qty         as count,
+       actions.price
+from actions
+         inner join products on actions.product_id = products.id
+         inner join suppliers on actions.supplier_id = suppliers.id
+where YEAR(action_date) = 2016
+  and month(action_date) = 1
+order by action_date desc;

@@ -1,0 +1,6 @@
+select b.brand,
+       sum(a.price * a.qty)
+from actions a
+         inner join products p on a.product_id = p.id
+         left join brands b on p.brand_id = b.id
+GROUP BY b.brand;

@@ -1,0 +1,42 @@
+use study;
+
+CREATE TABLE Fathers
+(
+    id            INT AUTO_INCREMENT PRIMARY KEY,
+    first_name    VARCHAR(50),
+    last_name     VARCHAR(50),
+    mobile_number INT(15),
+    home_number   INT(15),
+    address       VARCHAR(100)
+);
+
+INSERT INTO Fathers (last_name, first_name, mobile_number, home_number, Address)
+VALUES ('Smith', 'John', '123456789', '987654321', '123 Main St');
+
+CREATE TABLE Mothers
+(
+    id            INT AUTO_INCREMENT PRIMARY KEY,
+    first_name    VARCHAR(50),
+    last_name     VARCHAR(50),
+    mobile_number INT(15),
+    father_id     INT,
+    FOREIGN KEY (father_id) REFERENCES Fathers (id)
+);
+
+INSERT INTO Mothers (last_name, first_name, mobile_number, father_id)
+VALUES ('Smiths', 'Johna', '123422789', 1);
+
+CREATE TABLE Children
+(
+    id         INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name  VARCHAR(50),
+    birthdate  DATE,
+    father_id  INT,
+    mother_id  INT,
+    FOREIGN KEY (father_id) REFERENCES Fathers (id),
+    FOREIGN KEY (mother_id) REFERENCES Mothers (id)
+);
+
+INSERT INTO Children (last_name, first_name, birthdate, father_id, mother_id)
+VALUES ('Smith', 'John', '1999-01-01', 1, 1);

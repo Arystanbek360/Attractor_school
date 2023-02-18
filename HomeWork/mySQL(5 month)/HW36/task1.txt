@@ -1,0 +1,12 @@
+select products.product,
+       date(actions.action_date)   as delivery_date,
+       actions.qty                 as count,
+       actions.price,
+       actions.price * actions.qty as total_price
+from actions
+         inner join products on actions.product_id = products.id
+         inner join categories on products.category_id = categories.id
+where categories.category = "Monitors"
+  and YEAR(action_date) < 2017
+order by qty desc
+limit 5;

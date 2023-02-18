@@ -1,0 +1,4 @@
+select DISTINCT products.product
+from products
+         inner join actions on actions.product_id = products.id
+where YEAR(actions.action_date) = 2017;
