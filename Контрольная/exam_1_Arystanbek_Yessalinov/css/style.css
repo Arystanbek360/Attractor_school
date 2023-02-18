@@ -1,0 +1,275 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.upper {
+    text-transform: uppercase
+}
+
+.bg-green {
+    background-color: #5bbc2e;
+}
+
+.bg-p {
+    background-color: #c42fc9;
+}
+
+.text-green {
+    color: #5bbc2e;
+}
+
+.text-black {
+    color: black;
+}
+
+.text_gray {
+    color: #8d8d8d;
+}
+
+
+.big-text {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.medium-text {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.small-text {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.normal-text {
+    font-size: 15px;
+}
+
+.bg-gray {
+    background-color: #f5f5f5;
+}
+
+
+.second__text__item {
+    font-weight: 400;
+    color: #515151;
+}
+
+.promo__item {
+    z-index: 1;
+}
+
+.card_icon {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.way {
+    background-image: url(../img/ic-1.png);
+}
+
+.leaf {
+    background-image: url(../img/ic-2.png);
+}
+
+.home {
+    background-image: url(../img/ic-3.png);
+}
+
+.comunnity {
+    background-image: url(../img/ic-4.png);
+}
+
+.ic {
+    width: 13px;
+    height: 13px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.arrow {
+    background-image: url(../img/arrow.png);
+}
+
+
+
+.gray {
+    color: #4b4b4b;
+}
+
+.btn-p {
+    color: #fff;
+    background-color: #c42fc9;
+    border-color: #c42fc9;
+}
+
+
+
+.footer {
+    height: 90px;
+    background-color: #141414;
+    color: #e0e0e0;
+}
+
+.footer_text {
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-top: 2px solid ##5bbc2e;
+    border: 2px solid #5bbc2e;
+    border-radius: 50%;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.carousel-indicators .active {
+    background-color: #5bbc2e;
+}
+
+.hide {
+    display: none;
+}
+
+.main-login {
+    z-index: 2;
+}
+
+input.login:checked~.hide {
+    display: block;
+}
+
+.second {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label {
+    display: inline-block;
+    padding: 15px;
+    width: 50%;
+    font-size: 20px;
+    height: 53px;
+    background-color: #ffc107;
+}
+
+input[type="radio"]:checked+label {
+    background: #5bbc2e;
+}
+
+input[id="sig"]:checked~.hidden {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+}
+
+input[id="log"]:checked~.hidden {
+    display: none;
+}
+
+input[id="sig"]:checked~.hid {
+    display: none;
+}
+
+.form {
+    width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 1%;
+    background-color: #f5f5f5;
+    letter-spacing: 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__group {
+    position: relative;
+    margin-bottom: 42px;
+    display: inline-grid;
+}
+
+.form__title {
+    margin: 42px 118px;
+    font-size: 32px;
+    font-weight: normal;
+    width: 284px;
+    height: 55px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    font-size: 22px;
+    margin: 8px;
+    color: #5bbc2e;
+    transition: 0.3s;
+}
+
+.form__input {
+    height: 40px;
+    z-index: 3;
+    padding: 5px 10px;
+    border: 1px solid black;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+    font-size: 22px;
+    color: black;
+}
+
+.small {
+    width: 250px;
+}
+
+.big {
+    width: 100%;
+}
+
+.form__input:focus~.form__label,
+.form__input:not(:placeholder-shown)~.form__label {
+    color: black;
+    top: -25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.massage__input {
+    height: 80px;
+    width: 100%;
+    z-index: 3;
+    padding: 5px 10px;
+    border: 1px solid black;
+    background-color: transparent;
+    outline: none;
+    font-size: 22px;
+    color: black;
+}
+
+textarea::-webkit-input-placeholder {
+    color: black;
+}
+
+
+.form__btn {
+    background-color: #5bbc2e;
+    color: black;
+    height: 65px;
+    width: 100%;
+    border: none;
+    font-size: 32px;
+    font-weight: bold;
+}

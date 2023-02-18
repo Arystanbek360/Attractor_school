@@ -1,0 +1,23 @@
+[
+    {
+        "id": "2ms15",
+        "product": "Сапоги-скороходы",
+        "price": 0,
+        "honorary_code": "",
+        "state": "in_stock"
+    },
+    {
+        "id": "fd76",
+        "product": "Сабля-кладенец",
+        "price": 0,
+        "honorary_code": "",
+        "state": "in_stock"
+    },
+    {
+        "id": "zcs25",
+        "product": "Неразменный алтын",
+        "price": 0,
+        "honorary_code": "",
+        "state": "in_stock"
+    }
+]
