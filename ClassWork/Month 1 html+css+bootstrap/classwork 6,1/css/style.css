@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1340px;
+}
+
+.bg_yellow {
+    background-color: #FED100;
+}
+
+.d-ib {
+    display: inline-block;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+a {
+    color: black;
+}
+
+.header {
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.nav_link:hover {
+    color: white;
+}
+
+.contact_phone {
+    text-decoration: underline;
+}
+
+.promo {
+    min-height: 560px;
+    background-image: url('../images/courier.png'), url('../images/bus.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 60%, 90%;
+    background-size: contain, 25%;
+}
+
+.order {
+    width: 470px;
+    padding: 60px 0;
+}
+
+.order_title {
+    font-size: 70px;
+}
+
+.order_text {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.order_btn {
+    display: inline-block;
+    width: 304px;
+    height: 60px;
+    text-align: center;
+    background-color: #FF352B;
+    color: white;
+    line-height: 60px;
+}
+
+.order_btn:hover {
+    background-color: #de6059;
+}
+
+.dignities {
+    display: flex;
+    max-width: 580px;
+    justify-content: space-between;
+}
+
+.dignity {}
+
+.dignity_icon {
+    display: inline-block;
+    width: 41px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.ic-truck {
+    background-image: url('../images/ic-truck.svg');
+    width: 52px;
+}
+
+.ic-box {
+    background-image: url('../images/ic-box.svg');
+}
+
+.ic-money {
+    background-image: url('..//images/ic-money.svg');
+}
+
+.dignity_text {
+    display: inline-block;
+    width: 134px;
+}
+
+.about_delivery {
+    padding: 0 50px;
+}
+
+.about_delivery_title {
+    text-align: center;
+}
+
+.about_delivery_process_list {
+    list-style: none;
+    counter-reset: counter;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about_delivery_process_list_item {
+    counter-increment: counter;
+    flex-basis: 50%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.about_delivery_process_list_item::before {
+    content: "0" counter(counter);
+    font-weight: 200;
+    font-size: 3rem;
+    font-family: 'Abril Fatface', serif;
+    line-height: 1;
+    margin-right: 30px;
+}
+
+.process_list_item_title,
+.process_list_item_text {
+    width: 390px;
+}
+
+.prices_title,
+.prices_text {
+    text-align: center;
+}
+
+.prices_text {
+    font-weight: bold;
+}
+
+.prices_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price_card {
+    flex-basis: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid lightgray;
+    padding: 50px;
+    min-height: 500px;
+    justify-content: space-between;
+}
+
+.price_card:hover {
+    border: 2px solid #FED100;
+}
+
+.price_card_options {
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+}
+
+.price_card_order {
+    width: 250px;
+    height: 50px;
+    background: #FED100;
+}
+
+.price_card_order:hover {
+    cursor: pointer;
+    background: orange;
+}

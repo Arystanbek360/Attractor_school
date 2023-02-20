@@ -1,0 +1,66 @@
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+* {
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    flex-basis: 25%;
+    border: 2px solid grey;
+    padding: 5px;
+    margi;
+}
+
+
+@media screen and (max-width:800px)and (min-width:700) {
+    .item {
+        background-color: aqua;
+        flex-basis: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .item {
+        background-color: olivedrab;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .item {
+        background-color: orangered;
+    }
+}
+
+/* 
+@media screen and (max-width:800px) {
+    .item {
+        background-color: grey;
+    }
+} */
+
+@media print {
+    .flex-container {
+        display: block;
+    }
+
+    .item {
+        background-color: orange;
+        flex-basis: 50%;
+        margin: 15px;
+    }
+
+    .wrapper {
+        height: 100vh;
+        background: lightcyan url(https://w7.pngwing.com/pngs/482/705/png-transparent-xslt-watermark-others-miscellaneous-angle-white-thumbnail.png) center 50% no-repeat;
+    }
+}

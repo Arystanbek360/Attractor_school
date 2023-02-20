@@ -1,0 +1,31 @@
+.container {
+    margin: 0 auto;
+    width: 600px;
+    position: relative;
+}
+
+.box1 {
+    background: orange;
+}
+
+.box2 {
+    background: red;
+}
+
+.box3 {
+    background: aquamarine;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* bottom: 20%; */
+}
+
+.box4 {
+    background: lightpink;
+    height: 50px;
+}
+
+.box5 {
+    background: greenyellow;
+}

@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: :0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 2000px;
+    margin: 0px auto;
+}
+
+.flex-container {
+    background-color: lightgrey;
+    padding: 10px;
+    display: flex;
+    /* flex-direction: row;
+    height: 400px;
+    flex-wrap: wrap-reverse;
+    /* justify-content: center;
+    align-items: baseline; */
+}
+
+.flex-item {
+    flex-basis: 20%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.fgrow {
+    flex-grow: 1.5;
+}
+
+.bg-green {
+    background-color: lightgreen;
+}
+
+.bg-blue {
+    background-color: lightblue;
+}
+
+.bg-orange {
+    background-color: orange;
+}
