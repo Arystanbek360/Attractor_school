@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+</head>
+
+<body>
+    <script>
+        let numberOne = Math.floor(Math.random() * 9) + 1;
+        let numberTwo = Math.floor(Math.random() * 9) + 1;
+        let Answer = numberOne * numberTwo;
+
+        let user = prompt(`Сколько будет ${numberOne} * ${numberTwo}?`);
+
+        if (user == Answer) {
+            alert("Вы ответили верно");
+        } else {
+            alert("Ответ не верный,выучи таблицу умножения и приходи еще)");
+        }
+    </script>
+</body>
+
+</html>

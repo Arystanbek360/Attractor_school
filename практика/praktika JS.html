@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ваш любимый напиток</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .result {
+            font-weight: bold;
+            color: #c0392b;
+            text-transform: uppercase;
+            font-size: 36px;
+        }
+
+        .icon {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .beer {
+            background-image: url(https://m.dom-eda.com/uploads/images/catalog/item/cbb4387631/07042d6ed6_1000.jpg);
+            background-size: contain;
+            width: 100px;
+            height: 100px;
+        }
+
+        .coffee {
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/274px-A_small_cup_of_coffee.JPG);
+            background-size: contain;
+            width: 100px;
+            height: 100px;
+        }
+
+        .milk {
+            background-image: url(https://img.championat.com/c/900x900/news/big/u/z/moloko-kakoj-zhirnosti-poleznee_165546461427652812.jpg);
+            background-size: contain;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ваш любимый напиток</h1>
+    <div class="icon">
+        <img src="https://image.flaticon.com/icons/png/128/190/190880.png" alt="cup">
+    </div>
+    <p>Пожалуйста, укажите свой любимый напиток:</p>
+    <input type="text" id="input">
+    <button onclick="getResult()">Узнать результат</button>
+    <div id="result"></div>
+    <script>
+        function getResult() {
+            let favoriteDrink = document.getElementById("input").value.toLowerCase();
+            let resultElement = document.getElementById("result");
+            let result = "";
+
+            switch (favoriteDrink) {
+                case "beer":
+                case "vodka":
+                    result =
+                        "<div class='icon beer'></div><div class='result'>Чрезмерное употребление алкоголя вредно для здоровья!</div>";
+                    break;
+                case "coffee":
+                    result =
+                        "<div class='icon coffee'></div><div class='result'>Кофеин может быть вреден для здоровья, употребляйте с умеренностью.</div>";
+                    break;
+                case "milk":
+                    result =
+                        "<div class='icon milk'></div><div class='result'>Поздравляем с здоровым выбором напитка!</div>";
+                    break;
+                default:
+                    result =
+                        "<div class='result'>Никогда не пробовал такой напиток, но я уверен, что он вам нравится!</div>";
+                    break;
+            }
+
+            resultElement.innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>

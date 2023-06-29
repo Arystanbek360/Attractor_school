@@ -1,0 +1,176 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+}
+
+.header {
+    background: #fff;
+    padding: 15px 0;
+    height: 130px;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.nav_link {
+    color: #424242;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 998px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: inline-block;
+    margin: 0px 0px 15px 50px;
+}
+
+.logo_text {
+    display: inline-block;
+    font-size: 37px;
+    color: #424242;
+    font-weight: bold;
+}
+
+.nav_link {
+    margin-left: 50px;
+    font-size: 15px;
+    color: #424242;
+    font-weight: bold;
+}
+
+.first {
+    background-image: url('https://phonoteka.org/uploads/posts/2021-04/1619710136_33-phonoteka_org-p-krasivii-fon-dlya-zametok-35.jpg');
+    height: 600px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.text {
+    background: aqua;
+    border-radius: 25%;
+    color: #fff;
+    width: 868px;
+    height: 160px;
+    margin: 183px 0px 0px 72px;
+    text-align: center;
+}
+
+p {
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.button {
+    height: 68px;
+    width: 329px;
+}
+
+.knock {
+    height: 68px;
+    width: 320px;
+    background-color: #f8cd53;
+    margin: 0px 32%;
+    padding: 24px 66px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+a.knock:hover {
+    background-color: #aa9121;
+}
+
+a.knock:active {
+    background-color: #312a09;
+}
+
+.second {
+    height: 538px;
+    width: 100%;
+}
+
+.about {
+    height: 180px;
+    margin-top: 90px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #424242;
+}
+
+.about_text {
+    color: #424242;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.all_card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 253px;
+    height: 280px;
+    text-align: center;
+}
+
+i {
+    width: 253px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 13px;
+    background-position: top;
+}
+
+h3 {
+    font-size: 22px;
+    color: #424242;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.info {
+    font-size: 13px;
+    color: #5c5c5c;
+    font-weight: normal;
+    line-height: 28px;
+}
+
+.footer {
+    width: 100%;
+    height: 65px;
+    background-color: #515151;
+    text-align: right;
+}
+
+h4 {
+    color: #cecece;
+    font-size: 14px;
+    font-weight: normal;
+    display: inline-block;
+    margin: 25px 1%;
+}

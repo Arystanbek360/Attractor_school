@@ -1,0 +1,39 @@
+@startuml
+
+class Client {
+}
+
+class Context {
+    + setState(IState $state)
+    + requestAction1()
+    + requestAction2()
+}
+
+interface IState {
+    + handle1()
+    + handle2()
+}
+
+class StateOne {
+    + handle1()
+    + handle2()
+}
+
+class StateTwo {
+    + handle1()
+    + handle2()
+}
+
+class StateThree {
+    + handle1()
+    + handle2()
+}
+
+Client --right--> Context
+Context *-- IState
+IState <|.. StateOne
+IState <|.. StateTwo
+IState <|.. StateThree
+
+@enduml
+

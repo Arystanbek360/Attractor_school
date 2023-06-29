@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4</title>
+    <style>
+        .flag {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <p><b>Name: </b><span id="name"></span></p>
+    <p><b>Region: </b><span id="region"></span></p>
+    <p><b>Subregion: </b><span id="subregion"></span></p>
+    <p><b>Capital: </b><span id="capital"></span></p>
+    <p><b>Flag: </b><span id="flag"></span></p>
+
+    <input id="country-name" type="text">
+    <button id="show">Show information</button>
+
+    <script>
+        const xhr = new XMLHttpRequest();
+        const showButton = document.getElementById("show");
+
+        showButton.addEventListener("click", function () {
+            const countryName = document.getElementById("country-name");
+
+            xhr.addEventListener("load", function () {
+                if (xhr.status === 200) {
+                    const response = JSON.parse(this.responseText);
+
+                    document.getElementById("name").textContent = response[0].name.common;
+                    document.getElementById("region").textContent = response[0].region;
+                    document.getElementById("subregion").textContent = response[0].subregion;
+                    document.getElementById("capital").textContent = response[0].capital[0];
+                    document.getElementById("flag").innerHTML = `<img class="flag" src="${response[0].flags.svg}" alt="flag">`;
+                } else if (xhr.status === 404) {
+                    Swal.fire(
+                        'Ошибка 404',
+                        'Страна с таким названием не был найден',
+                        'error',
+                    )
+                }
+            });
+
+            xhr.open("GET", `https://restcountries.com/v3.1/name/${countryName.value}`);
+            xhr.send();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+</head>
+
+<body>
+    <ol id="todo-list"></ol>
+
+    <script>
+        const tasks = ['Buy lemonade', 'Make toasts', 'Repair car', 'Play games', 'Pet a cat'];
+
+        let list = document.getElementById('todo-list');
+        for (let task of tasks) {
+            let newLi = document.createElement('li');
+            newLi.innerText = task;
+            newLi.setAttribute('class', 'task')
+            list.appendChild(newLi);
+        }
+    </script>
+</body>
+
+</html>

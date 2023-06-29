@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+</head>
+
+<body>
+    <script>
+        const age = parseInt(prompt("Введите свой возраст"))
+        const randomIndex = Math.floor(Math.random() * 2);
+
+        if (age <= 13) {
+            let gender = confirm("Ты мальчик?")
+            if (gender) {
+                const film = ['Тачки', 'Наруто'];
+                alert("Ты должен посмотреть мультик " + `${film[randomIndex]}`)
+            } else {
+                const film = ['Барби', 'Винкс'];
+                alert("Ты должна посмотреть мультик " + `${film[randomIndex]}`)
+            }
+        } else if (age <= 17 && age > 13) {
+            let gender = confirm("Ты мальчик-подросток?")
+            if (gender) {
+                const film = ['Назад в будущее', 'Звездные войны'];
+                alert("Ты должен посмотреть фильм " + `${film[randomIndex]}`)
+            } else {
+                const film = ['Дикая', 'Мама, я на самом деле'];
+                alert("Ты должна посмотреть " + `${film[randomIndex]}`)
+            }
+        } else if (age > 17) {
+            let gender = confirm("Вы мужчина?")
+            if (gender) {
+                const film = ['Пила', 'Тревожный вызов'];
+                alert("Вы должны посмотреть фильм " + `${film[randomIndex]}`)
+            } else {
+                const film = ['Нерв', 'Отчаяные домохозяйки'];
+                alert("Вы должны посмотреть " + `${film[randomIndex]}`)
+            }
+        } else {
+            alert("Ошибка вы ввели не верный возраст")
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+{
+    "packages": [
+        {
+            "name": "pashster/future-time-package",
+            "version": "1.0.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pashster/Future.git",
+                "reference": "4f84d56931f2683616d2ed94df62fded7e9fda49"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pashster/Future/zipball/4f84d56931f2683616d2ed94df62fded7e9fda49",
+                "reference": "4f84d56931f2683616d2ed94df62fded7e9fda49",
+                "shasum": ""
+            },
+            "time": "2020-04-28T20:52:39+00:00",
+            "type": "project",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "FutureTime\\": "src/FutureTime/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Pavel Shchetkin",
+                    "email": "pasha.schetkin@gmail.com"
+                }
+            ],
+            "description": "Начинаем работать с пакетами",
+            "support": {
+                "issues": "https://github.com/pashster/Future/issues",
+                "source": "https://github.com/pashster/Future/tree/1.0.0-stable"
+            },
+            "install-path": "../pashster/future-time-package"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

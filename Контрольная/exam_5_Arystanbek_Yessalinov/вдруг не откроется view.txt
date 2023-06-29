@@ -1,0 +1,140 @@
+# --1
+select p.product,
+       sum(a.qty) as qty
+from actions a
+         inner join products p on a.product_id = p.id
+         inner join storages s on a.storage_id = s.id
+where a.move_id = 1
+  and s.storage_name = 'seventh'
+  and YEAR(a.date) between 2020 and 2025
+group by p.product
+order by p.product;
+
+#--2
+select p.product,
+       sum(a.qty) as qty
+from actions a
+         inner join products p on a.product_id = p.id
+         inner join storages s on a.storage_id = s.id
+where a.move_id = 2
+  and s.storage_name = 'seventh'
+  and YEAR(a.date) between 2020 and 2025
+group by p.product
+order by p.product;
+
+# --3
+select c.category,
+       sum(a.qty) as qty
+from actions a
+         inner join products p on a.product_id = p.id
+         inner join categories c on p.category_id = c.id
+where a.move_id = 1
+  and a.storage_id = 3
+  and YEAR(a.date) between 2020 and 2025
+group by c.category
+order by c.category;
+
+# --4
+select ifnull(b.brand, 'Без бренда') as brand,
+       sum(a.qty)                    as qty
+from actions a
+         inner join products p on a.product_id = p.id
+         left join brands b on p.brand_id = b.id
+where a.move_id = 1
+  and a.storage_id = 3
+  and YEAR(a.date) between 2020 and 2025
+group by b.brand
+order by b.brand;
+
+# --5
+select p.product,
+       sum(qty)
+from actions a
+         inner join products p on a.product_id = p.id
+where a.move_id = 1
+   or 4 and a.storage_id = 3
+    and date(a.date) < '2023-09-20'
+group by p.product
+order by p.product;
+
+# --6
+select p.product,
+       sum(a.qty) as qty
+from actions a
+         inner join products p on a.product_id = p.id
+where a.move_id = 1
+  and partners_id = 2
+  and YEAR(a.date) between 2020 and 2025
+group by p.product
+order by p.product;
+
+# --7
+select p.product,
+       sum(a.qty) as qty
+from actions a
+         inner join products p on a.product_id = p.id
+where a.move_id = 1
+  and storage_id = 2
+  and partners_id = 2
+  and YEAR(a.date) between 2020 and 2025
+group by p.product
+order by p.product;
+
+# --8
+select p.product,
+       sum(a.qty) as qty
+from actions a
+         inner join products p on a.product_id = p.id
+where a.move_id = 2
+  and partners_id = 2
+  and YEAR(a.date) between 2020 and 2025
+group by p.product
+order by p.product;
+
+# --9
+select p2.counterparty,
+       sum(a.qty) as qty
+from actions a
+         inner join products p on a.product_id = p.id
+         inner join partners p2 on a.partners_id = p2.id
+where a.move_id = 1
+  and p.product = 'iphone 14 Max'
+  and YEAR(a.date) between 2020 and 2025
+group by p2.counterparty
+order by p2.counterparty desc;
+
+# --10
+select p2.counterparty,
+       sum(a.qty) as qty
+from actions a
+         inner join products p on a.product_id = p.id
+         inner join partners p2 on a.partners_id = p2.id
+where a.move_id = 2
+  and p.product = 'oppo phone'
+  and YEAR(a.date) between 2020 and 2025
+group by p2.counterparty
+order by p2.counterparty desc;
+
+# --11
+select p.product,
+       sum(a.qty) as qty
+from actions a
+         inner join products p on a.product_id = p.id
+         inner join storages s on a.storage_id = s.id
+where a.move_id = 4
+  and storage_name = 'seventh'
+  and YEAR(a.date) between 2020 and 2025
+group by p.product
+order by p.product;
+
+# --12
+select p.product,
+       sum(a.qty) as qty
+from actions a
+         inner join products p on a.product_id = p.id
+         inner join storages s on a.storage_id = s.id
+where a.move_id = 3
+  and storage_name = 'sixth'
+  and YEAR(a.date) between 2020 and 2025
+group by p.product
+order by p.product;

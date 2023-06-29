@@ -1,0 +1,14 @@
+@startuml
+
+class Client {
+}
+
+class Singleton {
+    - {static} $instance : Singleton
+    - __construct()
+    + {static} getInstance() : Singleton
+}
+
+Client -right-> Singleton
+
+@enduml

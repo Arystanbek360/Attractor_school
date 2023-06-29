@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+</head>
+
+<body>
+    <script>
+        const numberOne = parseInt(prompt("Введите ширину"))
+        const numberTwo = parseInt(prompt("Введите длину"))
+
+        if (isNaN(numberOne) || isNaN(numberTwo)) {
+            alert("Введите числовые значения");
+        } else {
+            const object = prompt("Обьект измерения")
+            alert(`${object} имеет периметр: ${(numberOne + numberTwo) * 2}`)
+        }
+
+    </script>
+</body>
+
+</html>

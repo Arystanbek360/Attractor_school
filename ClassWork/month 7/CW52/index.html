@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #paragraph {
+            color: blue;
+        }
+
+        .alert {
+            padding: 15px;
+            border: 1px solid #d6e9c6;
+            border-radius: 4px;
+            color: #3c763d;
+            background-color: #dff0d8;
+        }
+
+        .alert-danger {
+            padding: 15px;
+            border: 1px solid #d6e9c6;
+            border-radius: 4px;
+            color: #000000;
+            background-color: #ea7878;
+        }
+    </style>
+    <script src="js/jQuery.js"></script>
+</head>
+
+<body>
+    <!-- <div id="hello">Hello World!!!</div> -->
+
+    <!-- <div class="element">Element</div>
+    <div class="element">Element</div>
+    <div class="element">Element</div> -->
+
+    <!-- <div id="paragraph">Lorem ipsum dolor sit amet.</div> -->
+
+    <div id="container"></div>
+    <ol id="list">
+        <li class="elem">0</li>
+        <li class="elem">2</li>
+        <li class="elem">3</li>
+        <li class="elem">4</li>
+        <li class="sub-elem" data-name="asa">Incert before</li>
+    </ol>
+    <input type="number" id="number" name="number" value="45" onchange="console.log($('#number').val())">
+    <div class="elem">vasa</div>
+
+
+
+    <script>
+        // // JQuery инпут исправление
+        // console.log($('#number').val());
+        // // Ванильный JS инпут исправление
+        // const inputNum = document.querySelector('#number');
+        // console.log(inputNum.value)
+        // inputNum.setAttribute('class', 'new-class')
+
+        // console.log($('.sub-elem').attr('class', 'new-class'));
+
+
+        // $('.sub-elem').css('color', 'red');
+        // $('.sub-elem').css({
+        //     color: 'blue',
+        //     borderTop: '1px solid black'
+        // });
+
+        // const container = $('#container');
+        // const newDiv = $('<div class="alert-danger">Warning</div>');
+        // container.append(newDiv);
+        // const newLi = $('<li>new Li</li>');
+        // $('#list').prepend(newLi);
+        // $('.sub-elem').insertBefore('.elem');
+
+
+        // console.log(container.html('<h1>some text</h1>'));
+        // const elements = $('.elem');
+        // let counter = 1;
+        // for (let element of elements) {
+        //     $(element).text(" || " + counter++);
+        // }
+        // elements.text('New text');
+
+// Vanila js
+        // console.dir(
+        //     document.querySelector('#list>.elem')
+        // );
+        // console.dir(
+        //     document.querySelectorAll('li.elem')
+        // );
+        // const list = document.querySelector('#list');
+        // console.log(list.querySelectorAll('.elem'));
+
+        // const newDiv = document.createElement('div');
+        // newDiv.innerHTML = '<b>Warning</b>Important message!!!';
+        // newDiv.className = 'alert alert-success';
+        // document.body.insertBefore(newDiv, document.body.firstChild);
+        // const list = document.getElementById('list');
+        // const newLi = document.createElement('li');
+        // newLi.innerHTML = "<b>Replaced</b>";
+        // list.replaceChild(newLi, list.children[0]);
+
+        // const newLi = document.createElement('li');
+        // newLi.innerText = '1 [insert]';
+        // newLi.style.color = 'red';
+        // const list = document.getElementById('list');
+        // list.insertBefore(newLi, list.children[1]);
+
+
+        // const container = document.getElementById('container');
+        // let newDiv = document.createElement('div');
+        // newDiv.innerText = 'some Text';
+        // newDiv.style.color = 'red';
+        // container.appendChild(newDiv);
+
+
+
+        // const paragraph = document.getElementById('paragraph');
+        // console.log('paragraph');
+        // paragraph.style.color = 'red';
+
+        // const elements = document.getElementsByClassName('element');
+        // let counter = 1;
+        // console.dir(elements);
+        // for (let element of elements) {
+        //     element.innerText += " " + counter++;
+        // }
+        // elements[1].innerText = "Vasa";
+
+        // const helloDiv = document.getElementById('hello');
+        // console.dir(helloDiv);
+        // console.log(helloDiv);
+        // helloDiv.innerHTML = 'Hello,<b>Arystanbek!!!<b>'
+    </script>
+</body>
+
+</html>

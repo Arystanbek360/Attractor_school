@@ -1,0 +1,5 @@
+{
+    "require": {
+        "pashster/phone-book": "^1.0"
+    }
+}

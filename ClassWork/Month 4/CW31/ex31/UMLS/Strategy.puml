@@ -1,0 +1,34 @@
+@startuml
+
+class Client {
+}
+
+class Context {
+    + __construct(IStrategy $strategy)
+    + changeStrategy(IStrategy $strategy)
+    + execute()
+}
+
+interface IStrategy {
+    + execute()
+}
+
+class StrategyOne {
+    + execute()
+}
+
+class StrategyTwo {
+    + execute()
+}
+
+class StrategyThree {
+    + execute()
+}
+
+Client --right--> Context
+Context *-- IStrategy
+IStrategy <|-- StrategyOne
+IStrategy <|-- StrategyTwo
+IStrategy <|-- StrategyThree
+
+@enduml

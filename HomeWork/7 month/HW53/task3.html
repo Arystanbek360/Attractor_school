@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+    <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+            let seconds = 0;
+            let minutes = 0;
+            let timer;
+
+            function twoDigit(value) {
+                if (value < 10) {
+                    return "0" + value.toString();
+                } else {
+                    return value.toString();
+                }
+            }
+
+            function startTimer() {
+                timer = setInterval(function () {
+                    seconds++;
+                    if (seconds == 60) {
+                        minutes++;
+                        seconds = 0;
+                    }
+                    document.getElementById("minutes").textContent = twoDigit(minutes);
+                    document.getElementById("seconds").textContent = twoDigit(seconds);
+                }, 1000);
+            }
+
+            function pauseTimer() {
+                clearInterval(timer);
+            }
+
+            function resetTimer() {
+                clearInterval(timer);
+                seconds = 0;
+                minutes = 0;
+                document.getElementById("minutes").textContent = "00";
+                document.getElementById("seconds").textContent = "00";
+            }
+
+            document.getElementById("start").addEventListener("click", startTimer);
+            document.getElementById("pause").addEventListener("click", pauseTimer);
+            document.getElementById("reset").addEventListener("click", resetTimer);
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <span id="minutes">00</span>:
+        <span id="seconds">00</span>
+    </div>
+    <button id="start">Start</button>
+    <button id="pause">Pause</button>
+    <button id="reset">Reset</button>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+{
+    "packages": [
+        {
+            "name": "pashster/phone-book",
+            "version": "1.0.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pashster/Phone-book.git",
+                "reference": "473a273aeb05c7b22dbce64d86202a09d79d686e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pashster/Phone-book/zipball/473a273aeb05c7b22dbce64d86202a09d79d686e",
+                "reference": "473a273aeb05c7b22dbce64d86202a09d79d686e",
+                "shasum": ""
+            },
+            "time": "2021-04-18T16:23:57+00:00",
+            "type": "project",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "PhoneBook\\": [
+                        "src/PhoneBook"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Schetkin Pavel",
+                    "email": "pasha.schetkin@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Заготовка для домашнего задания № 41",
+            "support": {
+                "issues": "https://github.com/pashster/Phone-book/issues",
+                "source": "https://github.com/pashster/Phone-book/tree/v1.0"
+            },
+            "install-path": "../pashster/phone-book"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

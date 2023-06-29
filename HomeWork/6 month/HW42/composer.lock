@@ -1,0 +1,56 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "9b1c5976e03b9e6d21dd4c399f984e59",
+    "packages": [
+        {
+            "name": "pashster/phone-book",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pashster/Phone-book.git",
+                "reference": "473a273aeb05c7b22dbce64d86202a09d79d686e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pashster/Phone-book/zipball/473a273aeb05c7b22dbce64d86202a09d79d686e",
+                "reference": "473a273aeb05c7b22dbce64d86202a09d79d686e",
+                "shasum": ""
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "PhoneBook\\": [
+                        "src/PhoneBook"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Schetkin Pavel",
+                    "email": "pasha.schetkin@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Заготовка для домашнего задания № 41",
+            "support": {
+                "issues": "https://github.com/pashster/Phone-book/issues",
+                "source": "https://github.com/pashster/Phone-book/tree/v1.0"
+            },
+            "time": "2021-04-18T16:23:57+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+    <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+            let container = document.getElementById("container");
+            let addButton = document.getElementById("add-item-btn");
+
+            addButton.addEventListener("click", function () {
+                let newElement = document.createElement("div");
+                newElement.classList.add("element");
+                newElement.textContent = "Element";
+                container.appendChild(newElement);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container"></div>
+    <input id="add-item-btn" type="button" value="+">
+</body>
+
+</html>

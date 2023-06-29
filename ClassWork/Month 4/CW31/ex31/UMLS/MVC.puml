@@ -1,0 +1,29 @@
+@startuml
+
+rectangle "Модель\n(Model)" as Model
+
+together {
+    rectangle "Контроллер\n(Controller)" as Controller
+    rectangle "Представление\n(View)" as View
+}
+
+rectangle "Пользователь\n(User)" as User
+
+Model <-- Controller : Манипулирует
+note right
+This is **bold**
+end note
+Controller <-- User : Обращается\nчерез\nинтерфейс
+note left
+This is **bold**
+end note
+User <-- View : Отображает\nинтерфейс\nи данные
+note right
+This is **bold**
+end note
+View <--- Model : Обновляет\nданные в\n интерфейсе
+note right
+This is **bold**
+end note
+
+@enduml

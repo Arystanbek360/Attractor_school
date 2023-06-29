@@ -1,0 +1,18 @@
+{
+    "name": "pashster/future-time-package",
+    "description": "Начинаем работать с пакетами",
+    "type": "project",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Pavel Shchetkin",
+            "email": "pasha.schetkin@gmail.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4" : {
+            "FutureTime\\" : "src/FutureTime/"
+        }
+    },
+    "require": {}
+}

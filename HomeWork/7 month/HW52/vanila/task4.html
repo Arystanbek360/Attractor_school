@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4</title>
+</head>
+
+<body>
+    <ul id="tasks"></ul>
+
+    <script>
+        const list = document.getElementById('tasks');
+        while (true) {
+            const task = prompt('Введите задачу');
+            if (task == null || task == '') {
+                break;
+            }
+            const li = document.createElement('li');
+            li.innerText = task;
+            list.appendChild(li);
+        }
+    </script>
+</body>
+
+</html>

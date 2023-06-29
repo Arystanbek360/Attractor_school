@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Список стран</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+</head>
+
+<body>
+
+    <table id="countries-table">
+        <thead>
+            <tr>
+                <th>Код</th>
+                <th>Флаг</th>
+                <th>Название</th>
+                <th>Столица</th>
+                <th>Население</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: 'https://restcountries.com/v3.1/all',
+                dataType: 'json',
+                success: function (data) {
+                    $.each(data, function (i, country) {
+                        $('#countries-table tbody').append(`
+              <tr>
+                <td>${country.cca3}</td>
+                <td><img src="${country.flags.png}" width="32" height="32"></td>
+                <td>${country.name.common}</td>
+                <td>${country.capital}</td>
+                <td>${country.population}</td>
+              </tr>
+            `);
+                    });
+
+                    $('#countries-table').DataTable({
+                        paging: true,
+                        searching: true,
+                        ordering: true,
+                        info: true
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

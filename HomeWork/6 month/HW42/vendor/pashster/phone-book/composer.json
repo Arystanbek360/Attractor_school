@@ -1,0 +1,21 @@
+{
+  "name": "pashster/phone-book",
+  "description": "Заготовка для домашнего задания № 41",
+  "type": "project",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Schetkin Pavel",
+      "email": "pasha.schetkin@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "PhoneBook\\": [
+        "src/PhoneBook"
+      ]
+    }
+  }
+}

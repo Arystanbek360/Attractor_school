@@ -1,0 +1,13 @@
+@startuml
+class Client {
+}
+
+class Registry {
+    - {static} container : mixed[];
+
+    + {static} function set(string $key, mixed $value) : void
+    + {static} function get(string $key) : mixed
+}
+
+Client --right--> Registry
+@enduml

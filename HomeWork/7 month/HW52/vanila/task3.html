@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+</head>
+
+<body>
+    <div id="cart-items">
+        <div class="item">Milk 1 l.<span class="qty">x 2</span></div>
+        <div class="item">Cola 1.5 l. <span class="qty">x 1</span></div>
+        <div class="item">Bread<span class="qty">x 2</span></div>
+        <div class="item">Cheese<span class="qty">x 1</span></div>
+        <div class="item">Chocolate bar<span class="qty">x 3</span></div>
+    </div>
+
+
+    <script>
+        let items = document.getElementsByClassName('item');
+        items[1].remove();
+        items[3].innerHTML = 'Canned Fish<span class="qty">x 4</span>';
+    </script>
+</body>
+
+</html>

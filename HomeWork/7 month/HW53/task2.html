@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+            let container = document.getElementById("container");
+            let start = document.getElementById("start");
+            let stop = document.getElementById("stop");
+
+            function addElement() {
+                let newElement = document.createElement("div");
+                newElement.classList.add("element");
+                newElement.textContent = Math.floor(Math.random() * 21);
+                container.appendChild(newElement);
+            }
+
+            function startSecond() {
+                second = setInterval(addElement, 5000);
+            }
+
+            function stopSecond() {
+                clearInterval(second);
+            }
+
+            start.addEventListener("click", startSecond);
+            stop.addEventListener("click", stopSecond);
+            startSecond();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container"></div>
+    <a id="start">Start</a> |
+    <a id="stop">Stop</a>
+</body>
+
+</html>
